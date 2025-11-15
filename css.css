@@ -1,0 +1,302 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    position: absolute;
+    top: 0;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 5px;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Login button */
+.login-btn {
+    background: #ff4545;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom,#0b0004,  #0b0004);
+    padding: 140px 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.green {
+    color: #b9ff3b;
+}
+
+.hero p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* Button */
+.book-btn {
+    background: #f7005a;
+    color: white;
+    border: none;
+    padding: 10px 28px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* Missed call */
+.missed-call {
+    margin-top: 5px;
+}
+
+/* Phone number */
+.phone {
+    font-size: 100px;
+    color: #b9ff3b;
+    font-weight: bold;
+}
+
+/* Hero image */
+.hero-man {
+    width: 500px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-man {
+        margin-top: 30px;
+    }
+}
+.services-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.services-section h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 180px;
+    padding: 25px 15px;
+    background: #fff;
+    border-radius: 40px 20px 40px 20px; /* custom curved corners */
+    box-shadow: 0px 0px 18px rgba(0, 180, 255, 0.6);
+    text-align: center;
+    transition: transform .3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service-container {
+        gap: 20px;
+    }
+    .service-card {
+        width: 150px;
+    }
+}
+.why-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #0a0000;
+}
+
+.why-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: white;
+}
+
+/* Layout */
+.why-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Individual Card */
+.why-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 0 12px rgba(89, 7, 156, 0.437);
+    transition: .3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Highlight first card */
+.highlight {
+    background: #ffecec;
+}
+
+/* Icons */
+.why-card img {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+/* Titles */
+.why-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Text */
+.why-card p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .why-section h2 {
+        font-size: 24px;
+    }
+}
+.stats-section {
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.stat-box img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.stat-box h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .stats-section {
+        gap: 40px;
+    }
+    .stat-box img {
+        width: 70px;
+    }
+}
+
